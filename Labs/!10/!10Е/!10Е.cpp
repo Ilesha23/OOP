@@ -1,6 +1,7 @@
 ﻿#include <iostream>
+using namespace std;
 
 int main()
 {
-    std::cout << "Hello PSADS{DAPSDASPD!\n";
+    cout << "Hello PSADS{DAPSDASPD!\n";
 }
