@@ -2,4 +2,5 @@
   Area.cpp
   Figure.cpp
   Создание кода...
-  !10А.vcxproj -> D:\OneDrive - Нацiональний технiчний унiверситет Харкiвський полiтехнiчний iнститут\Subjects\2 курс\OOP\Labs\!10\x64\Debug\!10А.exe
+  LINK : не найден или не выполнена сборка C:\Users\Win10\Desktop\OOP\Labs\!10\x64\Debug\!10А.exe при последней инкрементной компоновке; выполняется полная компоновка
+  !10А.vcxproj -> C:\Users\Win10\Desktop\OOP\Labs\!10\x64\Debug\!10А.exe

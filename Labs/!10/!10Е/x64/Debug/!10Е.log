@@ -1,1 +1,3 @@
 ﻿  !10Е.cpp
+C:\Users\Win10\Desktop\OOP\Labs\!10\!10Е\MyArray.h(15,13): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+  !10Е.vcxproj -> C:\Users\Win10\Desktop\OOP\Labs\!10\x64\Debug\!10Е.exe
