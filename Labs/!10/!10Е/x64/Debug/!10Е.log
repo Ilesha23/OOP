@@ -1,3 +1,4 @@
 ﻿  !10Е.cpp
 C:\Users\Win10\Desktop\OOP\Labs\!10\!10Е\MyArray.h(15,13): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+C:\Users\Win10\Desktop\OOP\Labs\!10\!10Е\!10Е.cpp(61,16): warning C4804: <: небезопасное использование типа "bool" в операции
   !10Е.vcxproj -> C:\Users\Win10\Desktop\OOP\Labs\!10\x64\Debug\!10Е.exe

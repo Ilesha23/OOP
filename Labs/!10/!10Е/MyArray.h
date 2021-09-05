@@ -20,10 +20,18 @@ public:
 		{
 			arr[i] = new int[m];
 		}
+		for (int i = 0; i < n; i++)
+		{
+			for (int j = 0; j < m; j++)
+			{
+				arr[i][j] = 0;
+			}
+		}
 	}
 
 	~MyArray() {
 		delete[] arr;
+		delete[] sub;
 	}
 
 	int getSizeX() const {
@@ -105,7 +113,7 @@ public:
 				{
 					break;
 				}
-				if (x - 1 == i && y - 1 == j)
+				if (x == i && y == j)
 				{
 					arr[i][j] = z;
 				}
@@ -116,8 +124,6 @@ public:
 			cout << "Too big coord" << endl << endl;
 		}
 	}
-
-	
 
 	void getSubMatrix(int a, int b, int c, int d) {
 		//a, b - first coords; c, d - second coords; g - size of new massive; k, l - coords of items in new massive;
@@ -167,6 +173,7 @@ public:
 			}
 			cout << endl;
 		}
+		cout << endl;
 	}
 };
 
