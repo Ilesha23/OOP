@@ -1,19 +1,24 @@
-#include "Dog.h"
+#include <string.h>
+using namespace std;
 class Master
 {
 private:
 	string fio;
-	const int ID = 1;
-	static int counter;
-	Dog* mas;
+	static int count;
+	
 
 public:
-	Master(string fio, Dog ...) {
-
+	const int id = 1;
+	Master(string fio) {
+		setFio(fio);
+		count++;
 	}
 	void setFio(string fio) {
 		this->fio = fio;
 	}
-
+	int getCount() {
+		return count;
+	}
 };
 
+int Master::count = 0;
