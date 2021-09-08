@@ -13,16 +13,22 @@
 //	клуба.
 
 #include <iostream>
-#include <string.h>
+#include <string>
 #include "Dog.h"
 #include "Master.h"
 using namespace std;
 
 int main()
 {
-	Master q("sd");
-	Master e("sdsd");
-	Master d("cxcx");
-	cout << q.getCount() << endl;
-	cout << q.id;
+	Master m1("John");
+	Master m2("Michael");
+	Dog dog1("Dogie", 10.0, 5);
+	Dog dog2("Bull", 12.5, 7);
+	Dog dog3("Dexter", 8.3, 3);
+	m1.addToMas(dog1);
+	m1.addToMas(dog2);
+	m1.printInfo();
+	m2.addToMas(dog3);
+	m2.printInfo();
+	Master::printCount();
 }
