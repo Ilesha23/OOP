@@ -1,3 +1,4 @@
-﻿C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(513,5): warning MSB8028: промежуточный каталог (Debug\) содержит файлы, которые используются совместно с другим проектом (!11.vcxproj).  Это может привести к ошибкам очистки и перестроения.
+﻿C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(519,5): warning MSB8028: промежуточный каталог (Debug\) содержит файлы, которые используются совместно с другим проектом (!11.vcxproj).  Это может привести к ошибкам очистки и перестроения.
   !11.cpp
+  LINK : не найден или не выполнена сборка C:\Users\Win10\Desktop\OOP\Labs\!11\Debug\!11А.exe при последней инкрементной компоновке; выполняется полная компоновка
   !11.vcxproj -> C:\Users\Win10\Desktop\OOP\Labs\!11\Debug\!11А.exe
