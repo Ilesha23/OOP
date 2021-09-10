@@ -1,7 +1,4 @@
-﻿//    – Определить конструктор, которые копирует в новое множество элементы другого множества, не
-//    превышающие заданное значение(конструктор копирования).
-
-#include <iostream>
+﻿#include <iostream>
 #include <iomanip>
 #include "Mult.h"
 using namespace std;
