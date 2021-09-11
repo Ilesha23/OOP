@@ -127,8 +127,8 @@ public:
 	}
 	void disjunction(Mult a, Mult b) {
 		cout << setw(13) << "Disjunction: ";
-		Mult::difference(a, b);
-		Mult::difference(b, a);
+		difference(a, b);
+		difference(b, a);
 	}
 	void fillRandDefault() {
 		setSize(10);
