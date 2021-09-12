@@ -198,12 +198,18 @@ public:
 	}
 
 	void deg() {
-		double a = abs((hour * 30 + min / 2) - min * 6);
+		int b = hour;
+		if (b >= 12)
+		{
+			b = b - 12;
+		}
+		int a = (b * 30 + min / 2) - min * 6;
+		a = abs(a);
 		if (a >= 180)
 		{
 			a = 360 - a;
 		}
-		cout <<"Degree: " << a << endl;
+		cout <<"Degree: " << abs(a) << endl;
 	}
 
 	void print() {
