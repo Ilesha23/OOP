@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{85b2ccb0-865b-411a-b918-be092f0bbace}</ProjectGuid>
-    <RootNamespace>My2</RootNamespace>
+    <ProjectGuid>{8ca17319-eb35-4c49-87bc-50d1d547b3fb}</ProjectGuid>
+    <RootNamespace>My2a</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -139,7 +139,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="2.cpp" />
+    <ClCompile Include="2a.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Sport.h" />
