@@ -63,6 +63,10 @@ public:
 		cout << setw(10) << name << setw(7) << code << setw(7) << area << setw(7) << place << endl;
 	}
 
+	char& operator[](int index) {
+		return name[index];
+	}
+
 	/*Sport& operator =(const Sport& ob) {
 		delete[] name;
 		name = new char[strlen(ob.name) + 2];
@@ -116,3 +120,4 @@ inline istream& operator>>(istream& stream, Sport& ob1)
 	cout << "Place: "; stream >> ob1.place;
 	return stream;
 }
+
