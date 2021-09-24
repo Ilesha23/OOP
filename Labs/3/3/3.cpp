@@ -15,8 +15,8 @@ int main()
 	cout << "D4 d4(100, 200, 300, 400, 500);" << endl;
 	cout << "D4 d5(1, 2, 3, 4, 5);" << endl;
 	cout << "\nСледуя иерархии класса D4: " << endl;
-	d4.show_D4();
+	d4.show();
 	cout << "\nСледуя иерархии класса D5: " << endl;
-	d5.show_D5();
+	d5.show();
 	return 0;
 }

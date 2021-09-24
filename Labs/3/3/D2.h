@@ -4,11 +4,11 @@ class D2: private B
 private:
 	int c;
 public:
-	D2(int x, int y) : B(x) {
+	D2(int x, int y) : B(y) {
 		c = x;
 	}
-	void show_D2() {
-		cout << "D2 = " << c << endl; show_B();
+	void show() override {
+		cout << "D2 = " << c << endl; B::show();
 	}
 };
 
