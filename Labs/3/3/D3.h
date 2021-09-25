@@ -1,14 +1,14 @@
 using namespace std;
-class D3: private B
+class D3: virtual private B
 {
 private:
 	int d;
 public:
-	D3(int x, int y) : B(x) {
+	D3(int x, int y) : B(y) {
 		d = x;
 	}
-	void show_D3() {
-		cout << "D3 = " << d << endl; show_B();
+	void show() override {
+		cout << "D3 = " << d << endl; B::show();
 	}
 };
 

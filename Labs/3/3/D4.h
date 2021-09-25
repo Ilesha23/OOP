@@ -7,8 +7,8 @@ public:
 	D4(int x, int y, int z, int i, int j) : D1(y, z), D2(i, j) {
 		e = x;
 	}
-	void show_D4() {
-		cout << "D4 = " << e << endl; show_D1(); show_D2();
+	void show() override {
+		cout << "D4 = " << e << endl; D1::show(); D2::show();
 	}
 };
 

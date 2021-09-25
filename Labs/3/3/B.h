@@ -6,7 +6,7 @@ public:
 	B(int x) {
 		a = x;
 	}
-	void show_B() {
+	virtual void show() {
 		cout << "B = " << a << endl;
 	}
 };
