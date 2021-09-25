@@ -76,20 +76,6 @@ public:
 		this->place = place;
 		return ob;
 	}
-
-	/*Sport& operator =(const Sport& ob) {
-		delete[] name;
-		name = new char[strlen(ob.name) + 2];
-		if (!name) {
-			cout << "Ошибка! Память не выделена.";
-			exit(1);
-		}
-		strcpy(name, ob.name);
-		code = ob.code;
-		area = ob.area;
-		place = ob.place;
-		return *this;
-	}*/
 };
 
 Sport operator+(const Sport& ob1, const Sport& ob2)
@@ -108,10 +94,12 @@ Sport operator+(const Sport& ob1, const Sport& ob2)
 }
 inline int operator==(const Sport& ob1, const Sport& ob2)
 {
-	if (ob1.name != ob2.name) { cout << "Данные экземпляры класса не равны." << endl; }
-	else if (ob1.code != ob2.code) { cout << "Данные экземпляры класса не равны." << endl; }
-	else if (ob1.area != ob2.area) { cout << "Данные экземпляры класса не равны." << endl; }
-	else if (ob1.place != ob2.place) { cout << "Данные экземпляры класса не равны." << endl; }
+	string name1 = ob1.name;
+	string name2 = ob2.name;
+	if (name1 != name2) { cout << "NAME is diffrent." << endl; }
+	else if (ob1.code != ob2.code) { cout << "CODE is diffrent." << endl; }
+	else if (ob1.area != ob2.area) { cout << "AREA is diffrent." << endl; }
+	else if (ob1.place != ob2.place) { cout << "PLACE is diffrent." << endl; }
 	else cout << "Экземпляры класса равны." << endl;
 	return 0;
 }
