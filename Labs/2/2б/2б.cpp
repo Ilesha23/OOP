@@ -36,15 +36,6 @@ int main()
 		obj[i].print();
 	}
 
-	/*cout << endl << "Operator =" << endl << "Choose objects: ";
-	cin >> a >> b;
-	obj[a] = obj[b];
-	system("cls");
-	for (int i = 0; i < N; i++)
-	{
-		obj[i].print();
-	}*/
-
 	cout << endl << "Operator +" << endl << "Choose objects: ";
 	cin >> a >> b;
 	Sport q = obj[a] + obj[b];
@@ -85,7 +76,7 @@ int main()
 	string cc;
 	double aa;
 	int pp;
-	cout << endl << "Name: "; cin >> an;
+	cout << endl << endl << "Name: "; cin >> an;
 	cout << "Code: "; cin >> cc;
 	cout << "Area: "; cin >> aa;
 	cout << "Place: "; cin >> pp;
