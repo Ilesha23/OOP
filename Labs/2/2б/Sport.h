@@ -63,8 +63,18 @@ public:
 		cout << setw(10) << name << setw(7) << code << setw(7) << area << setw(7) << place << endl;
 	}
 
-	char& operator[](int index) {
-		return name[index];
+	int& operator[](int index) const {
+		index = strlen(this->name);
+		return index;
+	}
+
+	Sport operator() (char* a, string code, double area, int place) {
+		Sport ob;
+		strcpy(name, a);
+		this->code = code;
+		this->area = area;
+		this->place = place;
+		return ob;
 	}
 
 	/*Sport& operator =(const Sport& ob) {
