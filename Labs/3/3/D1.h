@@ -1,14 +1,15 @@
 using namespace std;
-class D1: virtual public B
+class D1 : virtual public B
 {
 private:
-	int b;
+	
 public:
+	int b;
 	D1(int x, int y): B(y) {
 		b = x;
+		//cout << "D1" << endl;
 	}
 	void show() override {
 		cout << "D1 = " << b << endl; B::show ();
 	}
-};
-
+}; 

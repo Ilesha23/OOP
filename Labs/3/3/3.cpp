@@ -17,8 +17,7 @@ int main()
 	cout << "Следуя иерархии класса D4: " << endl;
 	d4.show();
 	cout << "\nСледуя иерархии класса D5: " << endl;
-	d5.show();
-
+	d5.show();	
 
 	return 0;
 }
