@@ -1,6 +1,6 @@
 using namespace std;
 class Sobaka {
-private:
+protected:
 	double weight;
 	int age;
 

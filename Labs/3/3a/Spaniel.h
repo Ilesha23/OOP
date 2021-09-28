@@ -8,9 +8,11 @@ public:
 	Spaniel() {
 		cout << "No info" << endl;
 	}
-	Spaniel(string c) {
+	Spaniel(double w, int a, string c) {
+		weight = w;
+		age = a;
 		color = c;
-		cout << "Spaniel constructor: color - " << color << endl;
+		cout << "Spaniel constructor: weight - " << weight << "		age - " << age << "		color - " << color << endl;
 	}
 	~Spaniel() {
 		cout << "Spaniel destructor" << endl;

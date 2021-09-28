@@ -5,6 +5,6 @@ using namespace std;
 
 int main()
 {
-	Spaniel s("red");
+	Spaniel s(10.0, 3, "red");
 	s.golos();
 }
