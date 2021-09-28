@@ -1,8 +1,10 @@
 #include <string>
 using namespace std;
 class Spaniel : public Sobaka {
-public:
+private:
 	string color;
+
+public:
 	Spaniel() {
 		cout << "No info" << endl;
 	}

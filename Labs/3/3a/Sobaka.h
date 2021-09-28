@@ -1,9 +1,10 @@
 using namespace std;
 class Sobaka {
-public:
+private:
 	double weight;
 	int age;
 
+public:
 	Sobaka() {
 		weight = 5.0;
 		age = 5;
