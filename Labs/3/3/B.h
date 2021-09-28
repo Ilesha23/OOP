@@ -1,7 +1,7 @@
 using namespace std;
 class B {
 private:
-	
+
 public:
 	int a;
 	B(int x) {
