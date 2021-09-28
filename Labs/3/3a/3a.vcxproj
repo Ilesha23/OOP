@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{a2e2cf4f-5417-4ae4-8982-038e2fa4c708}</ProjectGuid>
-    <RootNamespace>My3</RootNamespace>
+    <ProjectGuid>{fc43e220-7dee-4a08-b0b4-2fd2ca6c81d6}</ProjectGuid>
+    <RootNamespace>My3a</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -139,15 +139,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\..\..\3.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="B.h" />
-    <ClInclude Include="D1.h" />
-    <ClInclude Include="D2.h" />
-    <ClInclude Include="D3.h" />
-    <ClInclude Include="D4.h" />
-    <ClInclude Include="D5.h" />
+    <ClCompile Include="3a.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
