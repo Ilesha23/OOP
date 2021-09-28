@@ -1,6 +1,10 @@
 ﻿#include <iostream>
+#include "Sobaka.h"
+#include "Spaniel.h"
+using namespace std;
 
 int main()
 {
-    std::cout << "Hello World!\n";
+	Spaniel s("red");
+	s.golos();
 }

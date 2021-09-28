@@ -141,6 +141,10 @@
   <ItemGroup>
     <ClCompile Include="3a.cpp" />
   </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Sobaka.h" />
+    <ClInclude Include="Spaniel.h" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
