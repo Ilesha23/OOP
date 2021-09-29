@@ -1,20 +1,29 @@
-#include <iomanip>
 using namespace std;
 class PK1: public Base
 {
+protected:
+	vector<int> y;
+
 public:
-	int* y;
 	PK1() {
-		for (int i = 0; i < 10; i++)
+		for (int i = 0; i < x.size(); i++)
 		{
-			x[i] = 1;
+			if (x[i] % 7 == 3)
+				y.push_back(x[i]);
 		}
 	}
 	void show() override {
-		for (int i = 0; i < 10; i++)
+		cout << " PK1 mas: ";
+		if (y.empty())
 		{
-			cout << setw(3) << x[i] << " ";
+			cout << " Empty" << endl;
 		}
-		cout << endl;
+		else {
+			for (int i = 0; i < y.size(); i++)
+			{
+				cout << setw(3) << y[i] << " ";
+			}
+			cout << endl;
+		}
 	}
 };

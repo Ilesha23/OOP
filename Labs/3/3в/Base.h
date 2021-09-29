@@ -1,21 +1,20 @@
-#include <iomanip>
 using namespace std;
 class Base
 {
+protected:
+	vector<int> x;
+
 public:
-	int* x = new int[10];
 	Base(){
 		srand(time(0));
-		for (int i = 0; i < 10; i++)
+		for (int i = 0; i < N; i++)
 		{
-			x[i] = rand() % 100;
+			x.push_back(rand() % 100);
 		}
 	}
-	~Base() {
-		delete[] x;
-	}
 	virtual void show() {
-		for (int i = 0; i < 10; i++)
+		cout << "Base mas: ";
+		for (int i = 0; i < x.size(); i++)
 		{
 			cout << setw(3) << x[i] << " ";
 		}
