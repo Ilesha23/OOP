@@ -22,8 +22,16 @@ public:
 	bool getAvail() {
 		return available;
 	}
+	string boolToTxt(bool av) {
+		string a;
+		if (av) {
+			a = "available";
+		}
+		else a = "not available";
+		return a;
+	}
 	void show() override {
-		Book::show(); cout << setw(10) << catalog << setw(10) << available << endl;
+		Book::show(); cout << setw(8) << catalog << setw(17) << boolToTxt(available) << endl;
 	}
 	void took() {
 		available = false;

@@ -20,7 +20,7 @@ int main()
 
 	show(mas);
 	string a;
-	cout << "Enter name: "; cin >> a;
+	cout << "Enter name of book to check if it is at all: "; cin >> a;
 	bool b = false;
 	for (int i = 0; i < 3; i++)
 	{
