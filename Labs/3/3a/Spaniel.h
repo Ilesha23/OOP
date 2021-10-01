@@ -12,7 +12,7 @@ public:
 		weight = w;
 		age = a;
 		color = c;
-		cout << "Spaniel constructor: weight - " << weight << "		age - " << age << "		color - " << color << endl;
+		cout << "Spaniel constructor: weight - " << weight << "  age - " << age << "   color - " << color << endl;
 	}
 	~Spaniel() {
 		cout << "Spaniel destructor" << endl;
