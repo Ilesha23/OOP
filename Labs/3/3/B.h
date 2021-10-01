@@ -12,6 +12,6 @@ public:
 		//cout << "Default" << endl;
 	}
 	virtual void show() {
-		cout << "B " << endl;
+		cout << "B = " << a << endl;
 	}
 };
