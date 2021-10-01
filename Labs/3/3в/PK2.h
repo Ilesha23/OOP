@@ -1,5 +1,5 @@
 using namespace std;
-class PK2: PK1
+class PK2: protected PK1
 {
 protected:
 	vector<int> z;

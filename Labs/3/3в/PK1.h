@@ -1,5 +1,5 @@
 using namespace std;
-class PK1: public Base
+class PK1: protected Base
 {
 protected:
 	vector<int> y;
