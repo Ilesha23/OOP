@@ -8,15 +8,20 @@ using namespace std;
 
 int main()
 {
-	Triangle t(3, 4, 5);
+	int a, b, c1;
+
+	cout << "Enter sides of triangle: "; cin >> a >> b >> c1;
+	Triangle t(a, b, c1);
 	Figure* tt = &t;
 	tt->show();
 
-	Rectangle r(3, 5);
+	cout << "Enter sides of rectangle: "; cin >> a >> b;
+	Rectangle r(a, b);
 	Figure* rr = &r;
 	rr->show();
 
-	Circle c(5);
+	cout << "Enter radius of circle: "; cin >> a;
+	Circle c(a);
 	Figure* cc = &c;
 	cc->show();
 }
