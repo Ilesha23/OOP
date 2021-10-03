@@ -25,9 +25,10 @@ public:
 			}
 			cout << endl;
 		}
+		cout << endl;
 	}
 	void showBoth() {
-		cout << "Both conditions: ";
+		cout << " Both conditions: ";
 		bool a = true;
 		for (int i = 0; i < x.size(); i++)
 		{
@@ -39,6 +40,6 @@ public:
 		}
 		if (a)
 			cout << "Empty" << endl;
-		cout << endl;
+		cout << endl << endl;
 	}
 };

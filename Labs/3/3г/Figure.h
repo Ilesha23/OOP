@@ -9,10 +9,10 @@ public:
 		
 	}
 
-	void set(int xx, int yy) {
+	/*void set(int xx, int yy) {
 		x = xx;
 		y = yy;
-	}
+	}*/
 
 	virtual void show() = 0;
 };

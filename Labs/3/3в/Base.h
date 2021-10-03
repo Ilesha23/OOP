@@ -9,15 +9,16 @@ public:
 		srand(time(0));
 		for (int i = 0; i < N; i++)
 		{
-			x.push_back(rand() % 100);
+			x.push_back(i);
 		}
 	}
 	virtual void show() {
-		cout << "Base mas: ";
+		cout << " Base mas: ";
 		for (int i = 0; i < x.size(); i++)
 		{
 			cout << setw(3) << x[i] << " ";
 		}
+		cout << endl;
 		cout << endl;
 	}
 };

@@ -1,4 +1,4 @@
-﻿#define N 10
+﻿#define N 100
 
 #include <iostream>
 #include <iomanip>
