@@ -7,7 +7,6 @@ public:
 	int b;
 	D1(int x, int y) : B(y) {
 		b = x;
-		//cout << "D1" << endl;
 	}
 	void show() override {
 		cout << "D1 = " << b << endl; B::show();
