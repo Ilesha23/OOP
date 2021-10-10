@@ -2,7 +2,7 @@ class Circle: public Figure
 {
 public:
 	int x;
-	Circle(int a) {
+	Circle(int a = 0) {
 		x = a;
 	}
 
