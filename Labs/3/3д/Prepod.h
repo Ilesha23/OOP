@@ -4,10 +4,14 @@ class Prepod: public Persona
 public:
 	string discipline;
 	int step;
-	Prepod(string a, int b) {
+	Prepod(string name, int age, string a, int b): Persona(name, age) {
 		discipline = a;
 		step = b;
 	}
+	Prepod(string n, int a) : Persona(n, a) {
+
+	}
+	
 	int who() override {
 		return 1;
 	}
@@ -15,6 +19,10 @@ public:
 		return step;
 	}
 	void print() override {
-		cout << "Prepod" << endl;
+		cout << endl;
+		cout << setw(12) << "Prepod: " << name << endl;
+		cout << setw(12) << "Age: " << age << endl;
+		cout << setw(12) << "Discipline: " << discipline << endl;
+		cout << setw(12) << "Step: " << step << endl;
 	}
 };
