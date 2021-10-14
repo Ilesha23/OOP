@@ -26,7 +26,7 @@ public:
 		switch (a)
 		{
 		case 1:
-			cout << "Name: "; cin >> q; cout << "Age: "; cin >> w; cout << "Discipline: "; cin >> e; cout << "Step: "; cin >> r;
+			cout << "Name: "; cin >> q; cout << "Age: "; cin >> e; cout << "Discipline: "; cin >> w; cout << "Step: "; cin >> r;
 			Shtat[size] = new Prepod[1]{ { q, e, w, r } };
 			size++;
 			break;

@@ -25,7 +25,6 @@ int main()
             system("cls");
             vuz.addElem();
             system("cls");
-            vuz.print();
             break;
         case 2:
             system("cls");
