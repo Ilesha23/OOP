@@ -145,6 +145,7 @@
     <ClInclude Include="Persona.h" />
     <ClInclude Include="Prepod.h" />
     <ClInclude Include="Student.h" />
+    <ClInclude Include="VUZ.h" />
     <ClInclude Include="Zav_kaf.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

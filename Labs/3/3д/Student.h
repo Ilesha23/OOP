@@ -10,6 +10,7 @@ public:
 			mas[i] = 1 + rand() % 5;
 		}
 	}
+	Student() {}
 	void printMarks() {
 		cout << setw(12) << "Marks: ";
 		for (int i = 0; i < 5; i++)
@@ -39,6 +40,7 @@ public:
 		return res;
 	}
 	int ask() override {
+		cout << "Number of 2: " << findTwos() << endl;
 		return findTwos();
 	}
 };

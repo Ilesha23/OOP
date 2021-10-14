@@ -5,6 +5,7 @@ public:
 	Zav_kaf(string n, int a, string p):Prepod(n, a) {
 		pos = p;
 	}
+	Zav_kaf(){}
 	void print() override {
 		cout << endl;
 		cout << setw(12) << "Zav kaf: " << name << endl;
@@ -15,6 +16,8 @@ public:
 		return 2;
 	}
 	int ask() override {
+		cout << "Age: " << age << endl;
 		return age;
 	}
+	int findTwos() { return 0; }
 };

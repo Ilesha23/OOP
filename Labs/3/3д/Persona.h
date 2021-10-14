@@ -9,7 +9,11 @@ public:
 		name = n;
 		age = a;
 	}
+	Persona() {
+
+	}
 	virtual void print() = 0;
 	virtual int who() = 0;
 	virtual int ask() = 0;
+	virtual int findTwos() = 0;
 };

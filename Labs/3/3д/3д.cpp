@@ -1,27 +1,67 @@
 ﻿#include <iostream>
 #include <iomanip>
+#include <conio.h>
 #include <vector>
 #include <string>
 #include "Persona.h"
 #include "Prepod.h"
 #include "Zav_kaf.h"
 #include "Student.h"
+#include "VUZ.h"
 using namespace std;
 
 int main()
 {
-	Prepod pr1("asodi", 30, "Math", 1);
-	pr1.print();
-	cout << setw(12) << "Who: " << pr1.who() << endl;
-	cout << setw(12) << "Step: " << pr1.ask() << endl << endl;
-
-	Zav_kaf z1("uiop", 50, "yueewq");
-	z1.print();
-	cout << setw(12) << "Who: " << z1.who() << endl;
-	cout << setw(12) << "Age: " << z1.ask() << endl;
-
-	Student s1("qwerty", 20);
-	s1.print();
-	cout << setw(12) << "Who: " << s1.who() << endl;
-	cout << setw(12) << "How many 2: " << s1.ask() << endl;
+	VUZ vuz;
+    int a, b;
+    do
+    {
+        vuz.print();
+        cout << endl << setw(15) << "Add - 1" << endl; cout << setw(15) << "Prepod > 50 - 2" << endl; cout << setw(15) << "Student 2's - 3" << endl; cout << setw(15) << "Print - 4" << endl; cout << setw(15) << "Who - 5" << endl; cout << setw(15) << "Ask - 6" << endl; cout << setw(14) << "  Enter:  ";
+        cin >> a;
+        switch (a)
+        {
+        case 1:
+            system("cls");
+            vuz.addElem();
+            system("cls");
+            vuz.print();
+            break;
+        case 2:
+            system("cls");
+            vuz.print50();
+            _getch();
+            system("cls");
+            break;
+        case 3:
+            system("cls");
+            vuz.printStud2();
+            _getch();
+            system("cls");
+            break;
+        case 4:
+            system("cls");
+            cout << "Enter: "; cin >> b;
+            vuz.printByNum(b);
+            _getch();
+            system("cls");
+            break;
+        case 5:
+            system("cls");
+            cout << "Enter: "; cin >> b;
+            vuz.printWho(b);
+            _getch();
+            system("cls");
+            break;
+        case 6:
+            system("cls");
+            cout << "Enter: "; cin >> b;
+            vuz.printAsk(b);
+            _getch();
+            system("cls");
+            break;
+        default:
+            break;
+        }
+    } while (a <= 6 && a >= 0);
 }

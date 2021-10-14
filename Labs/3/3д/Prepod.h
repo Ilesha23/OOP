@@ -5,17 +5,19 @@ public:
 	string discipline;
 	int step;
 	Prepod(string name, int age, string a, int b): Persona(name, age) {
-		discipline = a;
-		step = b;
+		this->discipline = a;
+		this->step = b;
 	}
 	Prepod(string n, int a) : Persona(n, a) {
 
 	}
+	Prepod(){}
 	
 	int who() override {
 		return 1;
 	}
 	int ask() override {
+		cout << "Step: " << step << endl;
 		return step;
 	}
 	void print() override {
@@ -25,4 +27,5 @@ public:
 		cout << setw(12) << "Discipline: " << discipline << endl;
 		cout << setw(12) << "Step: " << step << endl;
 	}
+	int findTwos() { return 0; }
 };
