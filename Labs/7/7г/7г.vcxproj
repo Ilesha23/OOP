@@ -141,6 +141,13 @@
   <ItemGroup>
     <ClCompile Include="7г.cpp" />
   </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Point.h" />
+    <ClInclude Include="PointMas.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="A.txt" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
