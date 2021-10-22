@@ -4,12 +4,14 @@ using namespace std;
 class Enterprise
 {
 private:
+	
+
+public:
 	string name;
 	long account;
 	double income;
 	int number;
 
-public:
 	Enterprise() {
 		name = "";
 		account = 0;
@@ -17,12 +19,7 @@ public:
 		number = 0;
 	}
 	
-	void change(string n, long acc, double inc, int num) {
-		name = n;
-		account = acc;
-		income = inc;
-		number = num;
-	}
+	
 	string getName() { return name; }
 	long getAcc() { return account; }
 	double getInc() { return income; }
@@ -49,4 +46,13 @@ void print(Enterprise* objs, int num) {
 	{
 		cout <<setw(10)<< objs[i].getName() << setw(10) << objs[i].getAcc() << setw(10) << objs[i].getInc() << setw(6) << objs[i].getNum() << endl;
 	}
+}
+
+Enterprise obj[5];
+
+void change(Enterprise &ob, string n, long acc, double inc, int num) {
+	ob.name = n;
+	ob.account = acc;
+	ob.income = inc;
+	ob.number = num;
 }
