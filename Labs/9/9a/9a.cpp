@@ -8,16 +8,19 @@ int main()
 	vector<Vars> v1;
 	vector<Vars> v2;
 
-	int q = 0;
-	for (int i = 0; i < 5; i++)
+	for (int i = 0; i < 10; i++)
 	{
-		v1.push_back(Vars(q, i));
-		v1.push_back(Vars(q, i));
-		q += 2;
+		v1.push_back(Vars{ i, i });
+		v2.push_back(Vars{ i, i});
 	}
 
-	for (int i = 0; i < 5; i++)
+	for (int i = 0; i < v1.size(); i++)
 	{
-		v1[i].getSum() == v2[i].getSum();
+		if (v1[i] == v2[i])
+			cout << i << "   " << v1[i].getSum() << " == " << v2[i].getSum() << endl;
+		else if (v1[i] > v2[i])
+			cout << i << "   " << v1[i].getSum() << " > " << v2[i].getSum() << endl;
+		else if (v1[i] < v2[i])
+			cout << i << "   " << v1[i].getSum() << " < " << v2[i].getSum() << endl;
 	}
 }

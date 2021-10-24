@@ -2,7 +2,7 @@ using namespace std;
 
 class Vars
 {
-private:
+public:
 	int a, b, sum;
 
 public:
@@ -24,9 +24,19 @@ public:
 	}
 
 	friend bool operator==(const Vars& ob1, const Vars& ob2);
+	friend bool operator<(const Vars& ob1, const Vars& ob2);
+	friend bool operator>(const Vars& ob1, const Vars& ob2);
 };
 
 bool operator==(const Vars& ob1, const Vars& ob2)
 {
 	return (ob1.sum == ob2.sum);
+}
+inline bool operator<(const Vars& ob1, const Vars& ob2)
+{
+	return (ob1.sum < ob2.sum);
+}
+inline bool operator>(const Vars& ob1, const Vars& ob2)
+{
+	return (ob1.sum > ob2.sum);
 }
