@@ -40,3 +40,15 @@ inline bool operator>(const Vars& ob1, const Vars& ob2)
 {
 	return (ob1.sum > ob2.sum);
 }
+void compare(vector<Vars> vv1, vector<Vars> vv2) {
+	for (int i = 0; i < vv1.size(); i++)
+	{
+		if (vv1[i] == vv2[i])
+			cout << i << "   " << vv1[i].getSum() << " == " << vv2[i].getSum() << endl;
+		else if (vv1[i] > vv2[i])
+			cout << i << "   " << vv1[i].getSum() << " > " << vv2[i].getSum() << endl;
+		else if (vv1[i] < vv2[i])
+			cout << i << "   " << vv1[i].getSum() << " < " << vv2[i].getSum() << endl;
+	}
+	cout << endl;
+}
