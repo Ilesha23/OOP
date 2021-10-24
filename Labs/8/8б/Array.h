@@ -39,15 +39,15 @@ public:
 			cout << mas[i] << "  ";
 		}
 	}
-	double& operator[](const int a);
+	T& operator[](const int a);
 };
 
 template<class T>
-inline double& Array<T>::operator[](const int a)
+inline T& Array<T>::operator[](const int a)
 {
-	double q = 0.0;
+	T e = mas[0];
 	for (size_t i = 0; i < size(); i++)
-		if (q < mas[i])
-			q = mas[i];
-	return q;
+		if (e < mas[i])
+			e = mas[i];
+	return e;
 }
