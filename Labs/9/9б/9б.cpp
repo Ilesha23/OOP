@@ -8,12 +8,12 @@
 #include "Number.h"
 using namespace std;
 
-void findByFirst(map<Name, Number, Comparator> &mp);
-void delByFirst(map<Name, Number, Comparator> &mp);
+void findByFirst(map<Name, Number> &mp);
+void delByFirst(map<Name, Number> &mp);
 
 int main()
 {
-	map<Name, Number, Comparator> mp;
+	map<Name, Number> mp;
 	mp[Name("rewere")] = Number(11324);
 	mp[Name("fsfsdf")] = Number(13434);
 	mp[Name("vxcvxc")] = Number(32143);
@@ -82,7 +82,7 @@ int main()
 	} while (w <= 7 && w >= 0);
 }
 
-void findByFirst(map<Name, Number, Comparator>& mp)
+void findByFirst(map<Name, Number>& mp)
 {
 	char a;
 	cout << "Enter first letter: "; cin >> a;
@@ -94,7 +94,7 @@ void findByFirst(map<Name, Number, Comparator>& mp)
 		}
 	}
 }
-void delByFirst(map<Name, Number, Comparator>& mp)
+void delByFirst(map<Name, Number>& mp)
 {
 	string a;
 	cout << "Enter first letter: "; cin >> a;
