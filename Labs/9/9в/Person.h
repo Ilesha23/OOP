@@ -1,56 +1,40 @@
 #pragma once
+#include <string>
 using namespace std;
+
 class Person
 {
 public:
 	string name;
 	int age;
 
-	Person(){
-		name = "";
-		age = 0;
-	}
-	Person(string n) {
+	Person(string n, int a) {
 		name = n;
+		age = a;
+	}
+	/*Person(string n) {
+		name = n;
+		age = 0;
 	}
 	Person(int a) {
 		age = a;
+		name = "";
+	}*/
+	Person() {
+		name = "";
+		age = 0;
 	}
 	string getName() {
 		return name;
 	}
-	int getAge() {
-		return age;
+	friend bool operator < (const Person& a, const Person& b) {
+		return a.name < b.name;
 	}
-	///////////////////////////////////
-	void print() {
-		if (name == "")
-			cout << age;
-		else cout << name;
-	}
-	friend bool operator < (const Person& a, const Person& b);
-	friend ostream& operator << (ostream& stream, const Person& a);
 };
 
-bool operator<(const Person& a, const Person& b)
-{
-	if (a.name < b.name)
-		return true;
-	return false;
-}
-
-//////////////////////////////////////////
-inline ostream& operator<<(ostream& stream, const Person& a)
-{
-	stream << a.name << "  " << a.age;
-	return stream;
-}
-
-class Functor {
+class compare {
 public:
-	bool operator()(const Person& a, const Person& b) {
-		if (a.age < b.age)
-			return true;
-		else return false;
+	bool operator()(const Person& a, const Person& b) const {
+		return a.age < b.age;
 	}
 };

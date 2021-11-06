@@ -1,26 +1,22 @@
 ﻿#include <iostream>
-#include <fstream>
-#include <string>
-#include <map>
-#include "Person.h"
+//#include "Person.h"
 #include "Staff.h"
+#include <iostream>
 using namespace std;
 
 int main()
 {
-	/*Staff s;
-	s.insert("name1", 5);
-	s.insert("name2", 4);
-	s.insert("name3", 3);
-	s.insert("name4", 2);
-	s.insert("name5", 1);
-	s.print1();*/
-
-	Staff s;
-	s.insert(5, "name1");
-	s.insert(4, "name2");
-	s.insert(3, "name3");
-	s.insert(2, "name4");
-	s.insert(1, "name5");
-	s.print1();
+	Staff a;
+	a.insert("a", 3);
+	a.insert("b", 2);
+	a.insert("c", 1);
+	a.print();
+	/*a.printByNum(1);
+	a.printNames();
+	a.printAges();
+	a.printAgeByNum(1);
+	a.printNameByNum(1);
+	a.del("b");
+	a.print();
+	a.findByName("b");*/
 }
