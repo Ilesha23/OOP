@@ -1,22 +1,70 @@
 ﻿#include <iostream>
-//#include "Person.h"
+#include <conio.h>
 #include "Staff.h"
-#include <iostream>
 using namespace std;
 
 int main()
 {
 	Staff a;
-	a.insert("a", 3);
-	a.insert("b", 2);
-	a.insert("c", 1);
+	a.insert("abc", 456);
+	a.insert("bcd", 345);
+	a.insert("cde", 234);
+	a.insert("def", 123);
 	a.print();
-	/*a.printByNum(1);
+	_getch();
+
+	int q;
+	string n;
+	cout << "Print by num" << endl;
+	cout << "Enter: "; cin >> q;
+	a.printByNum(q);
+	_getch();
+	system("cls");
+
+	a.print();
+	cout << "Print all names" << endl;
 	a.printNames();
-	a.printAges();
-	a.printAgeByNum(1);
-	a.printNameByNum(1);
-	a.del("b");
+	_getch();
+	system("cls");
+
 	a.print();
-	a.findByName("b");*/
+	cout << "Print all ages" << endl;
+	a.printAges();
+	_getch();
+	system("cls");
+
+	a.print();
+	cout << "Print age by num" << endl;
+	cout << "Enter: "; cin >> q;
+	a.printAgeByNum(q);
+	_getch();
+	system("cls");
+
+	a.print();
+	cout << "Print name by num" << endl;
+	cout << "Enter: "; cin >> q;
+	a.printNameByNum(q);
+	_getch();
+	system("cls");
+
+	a.print();
+	cout << "Delete by name" << endl;
+	cout << "Enter: "; cin >> n;
+	a.del(n);
+	_getch();
+	system("cls");
+
+	a.print();
+	cout << "Find by name" << endl;
+	cout << "Enter: "; cin >> n;
+	a.findByName(n);
+	_getch();
+	system("cls");
+
+	a.print();
+	cout << "Find by age" << endl;
+	cout << "Enter: "; cin >> q;
+	a.findByAge(q);
+	_getch();
+	system("cls");
 }
