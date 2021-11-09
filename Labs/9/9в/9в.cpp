@@ -15,7 +15,7 @@ int main()
 
 	int q;
 	string n;
-	cout << "Print by num" << endl;
+	cout << "Print by index" << endl;
 	cout << "Enter: "; cin >> q;
 	a.printByNum(q);
 	_getch();
@@ -34,14 +34,14 @@ int main()
 	system("cls");
 
 	a.print();
-	cout << "Print age by num" << endl;
+	cout << "Print age by index" << endl;
 	cout << "Enter: "; cin >> q;
 	a.printAgeByNum(q);
 	_getch();
 	system("cls");
 
 	a.print();
-	cout << "Print name by num" << endl;
+	cout << "Print name by index" << endl;
 	cout << "Enter: "; cin >> q;
 	a.printNameByNum(q);
 	_getch();
